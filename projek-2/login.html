@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login POS</title>
+    <link rel="stylesheet" href="assets/css/login/style.css">
+</head>
+<body class="login-page">
+
+    <div class="login-box">
+        <div class="logo">
+            <img src="assets/img/logo-ws.png" alt="">
+        </div>
+        <h2>Login</h2>
+
+
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" autocomplete="username" placeholder="masukkan username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" autocomplete="current-password" placeholder="masukkan password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p id="error-message"></p>
+    </div>
+
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>

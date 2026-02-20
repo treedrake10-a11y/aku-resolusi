@@ -1,0 +1,83 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+}
+
+/* LOGIN PAGE */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 2px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* penting supaya gambar tidak keluar */
+}
+
+.logo img {
+    width: 200px;
+    object-fit: contain; /* biar proporsional */
+}
+
+
+.login-box {
+    width: 320px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 1px;
+}
+
+.login-box label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 2px solid rgb(226, 226, 226);
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #2c7be5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.login-box button:hover {
+    background: #1a68d1;
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    }

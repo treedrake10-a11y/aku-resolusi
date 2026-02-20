@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | POS</title>
+    <link rel="stylesheet" href="../assets/css/aadmiin/produk/main.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>POS Owner</h2>
+        </div>
+        
+        <div class="btn-sidebar">
+            <button data-link="admin-dashboard.html">Dashboard</button>
+            <button data-link="produk.html">Point of Sale</button>
+            <button data-link="stok-produk.html">Stok Produk</button>
+            <button data-link="pengaturan.html">Pengaturan</button>
+            <button data-link="../login.html">Logout</button>
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+        <div class="topbar1">
+                <h1>Point of Sale</h1>
+            <div class="search-bar">
+            <svg class="search-icon" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2"/>
+            </svg>
+                <input type="text" placeholder="cari">
+            </div>
+        </div>
+        
+        <div class="logo1">
+            <img src="../assets/img/logo-ws.png" alt="logo">
+
+        </div>
+        </header>
+    <section>
+        <!-- KATEGORI -->
+        <div class="kategori">
+            <button class="active">Snack</button>
+            <button>Minuman</button>
+            <button>Alat Tulis</button>
+            <button>Alat Tulis</button>
+            <button>Alat Tulis</button>
+        </div>
+
+       
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <!-- PRODUK -->
+            <section class="produk">
+                <!--pencarian produk-->
+        <div class="search-produk">
+            <input type="text" id="searchProduk" placeholder="Cari produk...">
+        </div>
+                <div class="produk-grid">
+                    <div class="card">
+                        <img src="../assets/img/chitato-removebg-preview.png">
+                        <div class="cart-produk">
+                            <h4>Chitato Sapi Panggang</h4>
+                            <p class="harga">Rp.16.000</p>
+                        </div>
+                        <div class="card-stok">
+                            <span>Stok: 50</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/img/oreo-removebg-preview.png">
+                        <div class="cart-produk">
+                            <h4>Oreo</h4>
+                            <p class="harga">Rp.16.000</p>
+                        </div>
+                        <div class="card-stok">
+                            <span>Stok: 50</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/img/lays-removebg-preview.png">
+                        <div class="cart-produk">
+                            <h4>Lays Rumput Laut</h4>
+                            <p class="harga">Rp.16.000</p>
+                        </div>
+                        <div class="card-stok">
+                            <span>Stok: 50</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="card">
+                        <img src="../assets/img/pang_pang-removebg-preview.png">
+                        <div class="cart-produk">
+                            <h4>Pang Pang</h4>
+                            <p class="harga">Rp.16.000</p>
+                        </div>
+                        <div class="card-stok">
+                            <span>Stok: 50</span>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+
+            <!-- CART -->
+            <aside class="cart">
+
+                <div class="cart-empty">
+                    🛒
+                    <p>KERANJANG KOSONG</p>
+                </div>
+
+                <div class="summary">
+                    <p>SubTotal <span>RP 0</span></p>
+                    <p>Pajak (2%) <span>RP 0</span></p>
+                    <h3>Total <span>RP 0</span></h3>
+                </div>
+
+                <div class="payment">
+                    <button class="active">Cash</button>
+                    <button>Transfer</button>
+                    <button>Qris</button>
+                </div>
+
+                <input type="text" value="RP 0" class="amount">
+
+                <button class="checkout" onclick="checkout()">BAYAR SEKARANG</button>
+            </aside>
+
+        </div>
+
+    </main>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/views/dashboard-admin.js"></script>
+    <script src="../assets/js/views/sidebar.js"></script>
+    <script src="../assets/js/views/pencarian.js"></script>
+    <script src="../assets/js/session.js"></script>
+    <script src="../assets/js/produk-render.js"></script>
+    <script src="../assets/js/transaksi-manager.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e9f4ff;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 230px;
+    background: #1e293b;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*logo di sidebar*/
+.logo {
+    margin-bottom: 30px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.logo h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/*tombol di sidebar*/
+.btn-sidebar button  {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 14px;
+        border-radius: 6px;
+        border: none;
+        color: #363636;
+        cursor: pointer;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+}
+
+ .btn-sidebar button:hover,
+.btn-sidebar button.active {
+    background: #2563eb;
+    color: #fff;
+}
+
+.logout {
+    margin-top: auto;
+    background: #dc2626;
+    color: #fff !important;
+    text-align: center;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: flex-start;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.topbar1{
+    width: 100px;
+}
+
+.topbar1 h1{
+    align-self: center;
+    font-size: 17px;
+    margin-bottom: 13px;
+}
+
+/*pencarian di topbar*/
+.search-bar {
+    position: relative; /* WAJIB */
+    width: 220px;
+}
+
+.topbar1 .search-bar input {
+    width: 100%;
+    padding: 10px 12px 10px 38px; /* ruang icon */
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #eaeaea;
+}
+
+/*icon pencarian di topbar*/
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: #6b7280;
+    pointer-events: none;
+}
+
+/*logo warung sekolah*/
+.logo1 {
+    width: 90px;      /* ukuran div */
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;  /* gambar tidak keluar div */
+    margin-left: auto;
+}
+
+.logo1 img {
+    max-width: 155px;
+    max-height: 155px;
+    object-fit: contain; /* logo tetap proporsional */
+}
+
+
+/* KATEGORI */
+.kategori {
+    flex: 2;
+    margin: 20px 0;
+    background-color: #2563eb;
+    border-radius: 8px;
+    padding: 10px;
+
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
+.kategori::-webkit-scrollbar {
+    display: none;
+}
+
+.kategori button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #dcdcdc;
+    cursor: pointer;
+}
+
+.kategori button.active {
+    background: #4e6cff;
+    color: white;
+}
+
+/*pencarian produk*/
+.search-produk {
+    flex: 2;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.search-produk input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* CONTENT */
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+/* PRODUK */
+.produk {
+    flex: 2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.produk-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    text-align: center;
+    padding:10px;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+.cart-produk{
+    text-align: left;
+    padding: 5px;
+}
+
+.card-stok{
+    text-align: right;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+.card img {
+    height: 130px;
+    object-fit: contain;
+}
+
+.harga {
+    color: #4e6cff;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* CART */
+.cart {
+    width: 320px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.cart-empty {
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.summary p,
+.summary h3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+
+.payment {
+    margin-top: 15px;
+}
+
+.payment button {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border-radius: 6px;
+    border: none;
+    background: #dcdcdc;
+    cursor: pointer;
+}
+
+.payment button.active {
+    background: #4e6cff;
+    color: white;
+}
+
+.amount {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #dfe5ff;
+    font-weight: bold;
+}
+
+.checkout {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #4e6cff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

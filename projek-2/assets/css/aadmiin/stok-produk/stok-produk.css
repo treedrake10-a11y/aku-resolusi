@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e9f4ff;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 230px;
+    background: #1e293b;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*logo di sidebar*/
+.logo {
+    margin-bottom: 30px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.logo h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/*tombol di sidebar*/
+.btn-sidebar button  {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 14px;
+        border-radius: 6px;
+        border: none;
+        color: #363636;
+        cursor: pointer;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+}
+
+ .btn-sidebar button:hover,
+.btn-sidebar button.active {
+    background: #2563eb;
+    color: #fff;
+}
+
+.logout {
+    margin-top: auto;
+    background: #dc2626;
+    color: #fff !important;
+    text-align: center;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: flex-start;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.topbar1{
+    width: 100px;
+}
+
+.topbar1 h1{
+    align-self: center;
+    font-size: 17px;
+    margin-bottom: 13px;
+}
+
+/*pencarian di topbar*/
+.search-bar {
+    position: relative; /* WAJIB */
+    width: 220px;
+}
+
+.topbar1 .search-bar input {
+    width: 100%;
+    padding: 10px 12px 10px 38px; /* ruang icon */
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #eaeaea;
+}
+
+/*icon pencarian di topbar*/
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    color: #6b7280;
+    pointer-events: none;
+}
+
+/*logo warung sekolah*/
+.logo1 {
+    width: 90px;      /* ukuran div */
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;  /* gambar tidak keluar div */
+    margin-left: auto;
+}
+
+.logo1 img {
+    max-width: 155px;
+    max-height: 155px;
+    object-fit: contain; /* logo tetap proporsional */
+}
+
+/* Table */
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px 10px;
+    text-align: left;
+}
+
+th {
+    color: #555;
+}
+
+td img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.action-btn {
+    border: 1px solid #ccc;
+    padding: 6px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
